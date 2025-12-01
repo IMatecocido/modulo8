@@ -11,19 +11,23 @@ public class NewBehaviourScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        float a = 5.2f;
+        float b = 3.6f;
+        float resultadoFloat = a + b;
+        int resultadoEntero = (int)resultadoFloat;
+        Debug.Log(resultadoEntero);
     }
 
     // Update is called once per frame
     void Update()
     {
-        intCounter += 1;
-        Debug.Log("El valor del IntCounter es" + intCounter);
+        //intCounter += 1;
+        //Debug.Log("El valor del IntCounter es" + intCounter);
     }
     private void FixedUpdate()
     {
-        floatValue *= multiplier;
-        Debug.Log("El valor del floatvalue es"+floatValue);
+        //floatValue *= multiplier;
+        //Debug.Log("El valor del floatvalue es"+floatValue);
     }
 
 }
