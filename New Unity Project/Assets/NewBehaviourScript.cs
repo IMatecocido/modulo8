@@ -23,8 +23,8 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        intCounter += 1;
-        Debug.Log("El valor del IntCounter es" + intCounter);
+        //intCounter += 1;
+        //Debug.Log("El valor del IntCounter es" + intCounter);
     }
     private void FixedUpdate()
     {
