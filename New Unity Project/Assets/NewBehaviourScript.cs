@@ -7,11 +7,17 @@ public class NewBehaviourScript : MonoBehaviour
     public int intCounter = 0;
     public float floatValue = 1.0f;
     public float multiplier = 1.05f;
+    public int numero = 5;
+    public Renderer rend;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        float a = 5.2f;
+        float b = 3.6f;
+        float resultadoFloat = a + b;
+        int resultadoEntero = (int)resultadoFloat;
+        Debug.Log(resultadoEntero);
     }
 
     // Update is called once per frame
@@ -24,6 +30,11 @@ public class NewBehaviourScript : MonoBehaviour
     {
         floatValue *= multiplier;
         Debug.Log("El valor del floatvalue es"+floatValue);
+        if (numero% 2 == 0) 
+            rend.material.color = Color.red;
+        else
+            rend.material.color = Color.green;
+        numero++;
     }
 
 }
