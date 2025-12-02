@@ -6,10 +6,13 @@ public class Cambiodecolor : MonoBehaviour
 {
     public string colortexto = "rojo";
     public Renderer rend;
+    public float numeroflotante = 2.323123f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        string flotante4decimales = numeroflotante.ToString("f4");
+        Debug.Log ("punto 5 - flotatne con 4 decimales" +  flotante4decimales);
     }
 
     // Update is called once per frame
