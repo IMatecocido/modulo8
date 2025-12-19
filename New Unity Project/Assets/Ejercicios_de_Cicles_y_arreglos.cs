@@ -29,7 +29,7 @@ public class Ejercicios_de_Cicles_y_arreglos : MonoBehaviour
             Debug.Log(arr3[i]);
         }
 
-        Debug.Log("Ejercicio2");
+       
         string[] palabras = { "Todos ", "esos ", "momentos ", "se ", "perderan ", "en ", "el ", "tiempo ", "igual ", "que ", "lagrimas ", "en ", "la ", "lluvia " };
         string oracionCompleta = "";
         foreach(string palabra in palabras)
@@ -37,9 +37,40 @@ public class Ejercicios_de_Cicles_y_arreglos : MonoBehaviour
             oracionCompleta += palabra + "";
         }
 
-        Debug.Log(oracionCompleta.Trim()); 
+        Debug.Log(oracionCompleta.Trim());
+        int[,] matriz = new int[2, 3];
+        int[] vector = new int[3];
+        int[] resultado = new int[2];
+        Debug.Log("Matriz");
+        for (int i = 0; i < 2; i++)
+        {
+            string fila = "";
+            for (int j = 0; j < 3; j++)
+            {
+                matriz[i, j] = Random.Range(1, 5);
+                fila += matriz[i, j] + " ";
+            }
+            Debug.Log(fila);
 
+        }
+        Debug.Log("vector");
+        for (int i = 0;i < vector.Length;i++)
+        {
+            vector[i] =Random.Range(1, 5);
+            Debug.Log("vector["+i+"]=" + vector[i]);
 
+        }
+        for(int i = 0; i < 2; i++)
+        {
+            resultado[i] = 0;
+            for(int j = 0;j < 3;j++)
+            {
+                resultado[i] += matriz[i, j] * vector[j];
+
+            }
+            Debug.Log("resultado["+i+"]=" + resultado[i]);
+        }
+        
     }
 
     // Update is called once per frame
